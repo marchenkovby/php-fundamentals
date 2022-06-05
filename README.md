@@ -1,2 +1,2 @@
 # php-fundamentals
-Learning PHP Basics!
+Learning PHP Basics
