@@ -1,6 +1,10 @@
 <?php
 
-error_reporting();
+// Off error
+//error_reporting(0);
+
+// On error (all errors)
+error_reporting(-1);
 
 // $тест = 1;
 
