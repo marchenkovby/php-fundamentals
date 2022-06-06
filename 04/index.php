@@ -19,6 +19,8 @@ $fruit = 'orange';
 
 $winnie_the_pooh = "Hello, I am Winnie. I have 2 {$fruit}s";
 
+$var = 'Test 1';
+$Var = 'Test 2';
 
 // camelCase (JavaScript)
 // $winnieThePooh
@@ -49,5 +51,12 @@ $_abc1
 <h1><?= $title; ?></h1>
 <p><?= $winniethepooh; ?></p>
 <p><?= $winnie_the_pooh; ?></p>
+<?php
+
+
+// Detal info about vars
+var_dump($var, $Var);
+
+?>
 </body>
 </html>
