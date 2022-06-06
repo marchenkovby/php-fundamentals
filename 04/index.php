@@ -5,6 +5,11 @@
 $title = 'Lesson 4!';
 $winniethepooh = 'Hello, I am Winnie!';
 
+// camelCase (JavaScript)
+// $winnieThePooh
+
+//$winnie_the_pooh
+
 /*
 Vars:
 
