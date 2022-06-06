@@ -8,13 +8,6 @@
 </head>
 <body>
 
-<p>Hello, world!</p>
-
-<!-- echo = print -->
-<p><?php echo 'Hello, world2!'; ?></p>
-<p><?php echo 'Hello, world3!'; ?></p>
-<p><?php echo 'Hello, world4!'; ?></p>
-
 <?php
     echo '<p>Hello, world5!</p>';
     echo '<p>Hello, world6!</p>';
