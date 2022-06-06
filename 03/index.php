@@ -15,15 +15,14 @@
 
 echo '<p>Hello, world1!</p>';
 echo '<p>Hello, world2!</p>';
-echo '<p>Hello, world2!</p>';
-echo '<p>Hello, world2!</p>';
-echo '<p>Hello, world2!</p>';
-echo '<p>Hello, world2!</p>';
-echo '<p>Hello, world2!</p>';
+//echo '<p>Hello, world2!</p>';
+//echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>'; # Comment style Unix
+
 ?>
 
-<?php echo '<p>Hello, world3!</p>'; ?>
-<?= '<p>Hello, world3!</p>'; ?>
+<?//php echo '<p>Hello, world3!</p>'; ?>
+<?//= '<p>Hello, world3!</p>'; ?>
 
 <!-- short_open_tag -->
 <? echo '<p>Hello, world4!</p>'; ?>
