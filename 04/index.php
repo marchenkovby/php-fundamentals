@@ -1,10 +1,10 @@
 <?php
 
 // Off error
-//error_reporting(0);
+error_reporting(0);
 
 // On error (all errors)
-error_reporting(-1);
+//error_reporting(-1);
 
 // $тест = 1;
 
@@ -57,8 +57,8 @@ $_abc1
 // Detal info about vars
 //var_dump($var, $Var);
 
-echo $var;
-echo $Var;
+//echo $var;
+//echo $Var;
 
 ?>
 </body>
