@@ -1,7 +1,7 @@
 <?php error_reporting(-1); 
 
 // First version declaration const
-define("CONST_1", "value 1");
+define('CONST_1', 'value 1');
 
 echo CONST_1;
 
