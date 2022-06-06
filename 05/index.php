@@ -4,4 +4,6 @@
 
 define("CONST_1", "value 1");
 
+echo CONST_1;
+
 ?>
