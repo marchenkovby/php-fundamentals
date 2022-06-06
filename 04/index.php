@@ -1,5 +1,7 @@
 <?php
 
+error_reporting();
+
 // $тест = 1;
 
 $title = 'Lesson 4!';
