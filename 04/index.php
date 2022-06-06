@@ -2,7 +2,7 @@
 
 // $тест = 1;
 
-$title = 'Lesson 4';
+$title = 'Lesson 4!';
 
 /*
 Vars:
