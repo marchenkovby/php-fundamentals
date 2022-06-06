@@ -1,3 +1,4 @@
+<?php phpinfo(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,8 @@
   <title>Lesson 3</title>
 </head>
 <body>
+
+<!-- PHP -->
 
 <?php
     echo '<p>Hello, world1!</p>';
