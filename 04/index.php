@@ -4,6 +4,9 @@
 
 $title = 'Lesson 4!';
 $winniethepooh = 'Hello, I am Winnie!';
+$winniethepooh = "Hello, I'am Winnie!";
+// Backslash
+$winniethepooh = "Hello, I'am Winnie. \"Stroke with quotes\"";
 
 // camelCase (JavaScript)
 // $winnieThePooh
