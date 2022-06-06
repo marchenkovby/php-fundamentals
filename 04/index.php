@@ -17,7 +17,7 @@ $winniethepooh = "Hello, I'm Winnie. \"Stroke with quotes\"";
 $fruit = 'orange';
 //$winnie_the_pooh = "Hello, I'm Winnie. I have 1 $fruit";
 
-$winnie_the_pooh = "Hello, I am Winnie. I have 1 $fruits";
+$winnie_the_pooh = "Hello, I am Winnie. I have 2 {$fruit}s";
 
 
 // camelCase (JavaScript)
