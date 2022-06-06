@@ -38,5 +38,6 @@ $_abc1
 <?php $title = 'Lesson 4'; ?>
 <h1><?= $title; ?></h1>
 <p><?= $winniethepooh; ?></p>
+<p><?= $winnie_the_pooh; ?></p>
 </body>
 </html>
