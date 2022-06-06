@@ -9,9 +9,12 @@
 <body>
 
 <?php
-    echo '<p>Hello, world5!</p>';
-    echo '<p>Hello, world6!</p>';
+    echo '<p>Hello, world1!</p>';
+    echo '<p>Hello, world2!</p>';
 ?>
+
+<?php'<p>Hello, world3!</p>'; ?>
+<?= '<p>Hello, world3!</p>'; ?>
 
 </body>
 </html>
