@@ -1,6 +1,8 @@
 <?php
 
-$тест = 1;
+// $тест = 1;
+
+$title = 'Lesson 4';
 
 /*
 Vars:
@@ -19,11 +21,9 @@ $_abc1
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 4</title>
+    <title><?= $title; ?></title>
 </head>
 <body>
-
-<?= $тест; ?>
-
+<h1><?= $title; ?></h1>
 </body>
 </html>
