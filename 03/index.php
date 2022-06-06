@@ -16,5 +16,7 @@
 <?php echo '<p>Hello, world3!</p>'; ?>
 <?= '<p>Hello, world3!</p>'; ?>
 
+<? echo '<p>Hello, world4!</p>'; ?>
+
 </body>
 </html>
