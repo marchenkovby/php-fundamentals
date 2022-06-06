@@ -1,4 +1,4 @@
-<?php phpinfo(); ?>
+ <?php //phpinfo(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,8 +12,14 @@
 <!-- PHP -->
 
 <?php
-    echo '<p>Hello, world1!</p>';
-    echo '<p>Hello, world2!</p>';
+
+echo '<p>Hello, world1!</p>';
+echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>';
+echo '<p>Hello, world2!</p>';
 ?>
 
 <?php echo '<p>Hello, world3!</p>'; ?>
