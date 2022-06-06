@@ -17,7 +17,7 @@
 <?= '<p>Hello, world3!</p>'; ?>
 
 <!-- short_open_tag -->
-<? //echo '<p>Hello, world4!</p>'; ?>
+<? echo '<p>Hello, world4!</p>'; ?>
 
 </body>
 </html>
