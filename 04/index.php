@@ -15,7 +15,6 @@ $winniethepooh = "Hello, I'am Winnie. \"Stroke with quotes\"";
 
 /*
 Vars:
-
 $a-b...
 $abc1
 
