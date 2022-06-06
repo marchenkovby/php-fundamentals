@@ -7,7 +7,7 @@ echo CONST_1;
 
 // Second version declaration const
 // Only top page
-const CONST_2 = 'value 2';
+const CONST_2 = "new value 2";
 
 var_dump(CONST_2);
 
