@@ -1,13 +1,13 @@
 <?php error_reporting(-1); 
 
 // First version declaration const
-define("CONST_1", "new value 1");
+define("CONST_1", "value 1");
 
 echo CONST_1;
 
 // Second version declaration const
 // Only top page
-const CONST_2 = "new value 2";
+const CONST_2 = 'new value 2';
 
 var_dump(CONST_2);
 
