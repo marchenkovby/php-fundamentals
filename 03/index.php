@@ -16,7 +16,8 @@
 <?php echo '<p>Hello, world3!</p>'; ?>
 <?= '<p>Hello, world3!</p>'; ?>
 
-<? echo '<p>Hello, world4!</p>'; ?>
+<!-- short_open_tag -->
+<? //echo '<p>Hello, world4!</p>'; ?>
 
 </body>
 </html>
