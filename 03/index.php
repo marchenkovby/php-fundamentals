@@ -13,8 +13,16 @@
 
 <?php
 
+/*
+ * There are
+ * a lot of
+ * comments
+ * */
+
+/*
 echo '<p>Hello, world1!</p>';
 echo '<p>Hello, world2!</p>';
+*/
 //echo '<p>Hello, world2!</p>';
 //echo '<p>Hello, world2!</p>';
 echo '<p>Hello, world2!</p>'; # Comment style Unix
