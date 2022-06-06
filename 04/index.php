@@ -8,6 +8,9 @@ $winniethepooh = "Hello, I'am Winnie!";
 // Backslash
 $winniethepooh = "Hello, I'am Winnie. \"Stroke with quotes\"";
 
+$fruit = 'orange';
+$winnie_the_pooh = "{$fruit}";
+
 // camelCase (JavaScript)
 // $winnieThePooh
 
