@@ -2,6 +2,6 @@
 
 // WARNING. CONST not change!
 
-define
+define("CONST_1", "value 1");
 
 ?>
