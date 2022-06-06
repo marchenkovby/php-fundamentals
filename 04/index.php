@@ -20,7 +20,7 @@ $fruit = 'orange';
 $winnie_the_pooh = "Hello, I am Winnie. I have 2 {$fruit}s";
 
 $var = 'Test 1';
-$Var = 'Test 2';
+//$Var = 'Test 2';
 
 // camelCase (JavaScript)
 // $winnieThePooh
