@@ -24,6 +24,7 @@ $_abc1
     <title><?= $title; ?></title>
 </head>
 <body>
+<?php $title = 'Lesson 4'; ?>
 <h1><?= $title; ?></h1>
 </body>
 </html>
