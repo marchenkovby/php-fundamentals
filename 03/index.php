@@ -13,7 +13,7 @@
     echo '<p>Hello, world2!</p>';
 ?>
 
-<?php'<p>Hello, world3!</p>'; ?>
+<?php echo '<p>Hello, world3!</p>'; ?>
 <?= '<p>Hello, world3!</p>'; ?>
 
 </body>
