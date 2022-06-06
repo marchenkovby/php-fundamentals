@@ -55,7 +55,7 @@ $_abc1
 
 
 // Detal info about vars
-//var_dump($var, $Var);
+var_dump($var, $Var);
 
 //echo $var;
 //echo $Var;
