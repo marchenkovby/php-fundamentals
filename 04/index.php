@@ -3,6 +3,7 @@
 // $тест = 1;
 
 $title = 'Lesson 4!';
+$winniethepooh = 'Hello, I am Winnie!';
 
 /*
 Vars:
@@ -26,5 +27,6 @@ $_abc1
 <body>
 <?php $title = 'Lesson 4'; ?>
 <h1><?= $title; ?></h1>
+<p><?= $winniethepooh; ?></p>
 </body>
 </html>
