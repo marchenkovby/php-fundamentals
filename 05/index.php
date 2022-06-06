@@ -18,6 +18,6 @@ const NAME = 'Jonh';
 //echo "Hello, {NAME}";
 
 // WARNING. CONST not change!
-define("CONST_1", "new value 1");
+//define("CONST_1", "new value 1");
 
 
