@@ -1,3 +1,16 @@
+<?php
+
+/*
+Vars:
+
+$a-b...
+$abc1
+
+$_
+$_abc1
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
