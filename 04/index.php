@@ -22,6 +22,8 @@ $_abc1
     <title>Lesson 4</title>
 </head>
 <body>
-    
+
+<?= $тест; ?>
+
 </body>
 </html>
