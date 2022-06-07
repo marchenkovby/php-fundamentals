@@ -1,4 +1,4 @@
-<?php error_reporting(-1); 
+<?php error_reporting(-1);
 
 // First version declaration const
 define("CONST_1", "value 1");
@@ -23,4 +23,6 @@ const NAME = 'Jonh';
 // Can't override
 //$this = 'Test';
 
-var_dump(get_defined_constants());
+// Show all constants,
+// if true, then constants sort by category
+var_dump(get_defined_constants(true));
