@@ -34,9 +34,9 @@ $int2 = 1;
 
 //var_dump("10" + 20); // 30
 //var_dump("10str" + 20); // 30 with warning (non-critical error)
-//var_dump("str10" + 20); // 30 with warning (non-critical error)
+//var_dump("str10" + 20); // Function not exec (critical error)
 
-$float = 1_234.567; // Separator only . (dot), no , (comma)
+$floats = 1_234.567; // Separator only . (dot), no , (comma)
 
 //var_dump(123 + 10.2);
 
