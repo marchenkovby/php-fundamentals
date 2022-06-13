@@ -18,6 +18,7 @@
 //$a += 3 * 5;
 //var_dump($a);
 
+// Assigment by value
 // $a = 3;
 // $b = $a;
 
@@ -27,6 +28,7 @@
 
 // var_dump($a, $b);
 
+// Assigment by referance
 $a = 3;
 $b =& $a;
 
