@@ -22,3 +22,7 @@ $a = 3;
 $b = $a;
 
 var_dump($a, $b);
+
+$a = 5;
+
+var_dump($a, $b);
