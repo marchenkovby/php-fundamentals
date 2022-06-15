@@ -18,3 +18,5 @@
 var_dump((int)'b');
 var_dump((string)1);
 var_dump(1 <=> 'b'); // -1
+
+03:58
