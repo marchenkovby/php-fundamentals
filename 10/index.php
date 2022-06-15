@@ -12,6 +12,7 @@
 //var_dump(2 > 3); // false
 //var_dump(3 <= 3); // true
 
-var_dump(2 <=> 3); // -1
-var_dump(3 <=> 2); // 1
-var_dump(3 <=> 3); // 0
+// var_dump(2 <=> 3); // -1
+// var_dump(3 <=> 2); // 1
+// var_dump(3 <=> 3); // 0
+var_dump('a' <=> 'a'); // 0
