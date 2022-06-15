@@ -15,8 +15,10 @@
 // var_dump(2 <=> 3); // -1
 // var_dump(3 <=> 2); // 1
 // var_dump(3 <=> 3); // 0
-var_dump((int)'b');
-var_dump((string)1);
-var_dump(1 <=> 'b'); // -1
+//var_dump((int)'b');
+//var_dump((string)1);
+//var_dump(1 <=> 'b'); // -1
 
-03:58
+$a = 2;
+var_dump($a++);
+var_dump($a++);
