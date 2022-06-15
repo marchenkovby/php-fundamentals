@@ -15,6 +15,5 @@
 // var_dump(2 <=> 3); // -1
 // var_dump(3 <=> 2); // 1
 // var_dump(3 <=> 3); // 0
-$a = 'b';
-var_dump(int($a));
+var_dump((int)'10');
 //var_dump(1 <=> 'b'); // 0
