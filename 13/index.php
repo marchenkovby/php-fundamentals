@@ -1,34 +1,40 @@
 <?php error_reporting(-1);
 
-// Task 1
+// Control structures (Управляющие конструкции)
 
-// Seconds in an hour
-$hour = 60 * 60;
+// Language constructs (языковые конструкции): echo, print, list(), array(), eval()
 
-// Seconds in a day
-$day = $hour * 24;
+// echo ( string ...$expressions ) : void - пустота, ничего не возвращает
 
-// Seconds in a week
-$week = $day * 7;
+// print ( string $expression ) : int
 
-//echo $hour  . PHP_EOL .  $day  . PHP_EOL . $week  . PHP_EOL;
-var_dump($hour, $day, $week);
+//echo 'Test 1', 'Test 2', 'Test 3';
 
+//print 'Test 1'; // print ('Test 1');
 
-// Task 2
+//var_dump(print 'test');
+// var_dump(echo 'test'); // parse error
 
-$x = 60;
+$light = 'yellow';
 
-//// Seconds in an hour
-//$x *= 60;
-//echo $x . PHP_EOL;
-//
-//// Seconds in a day
-//$x *= 24;
-//echo $x  . PHP_EOL;
-//
-//// Seconds in a week
-//$x *= 7;
-//echo $x  . PHP_EOL;
+//if ($light == 'green') {
+//    echo 'You can go now';
+//} else {
+//    echo 'You can\'t go now';
+//}
 
-var_dump($x *= 60, $x *= 24, $x *= 7);
+if ($light == 'green') {
+    echo 'You can go now';
+} elseif ($light == 'yellow') { // иначе если
+    echo 'Get yeady';
+    if (2 > 3) {
+        echo '2 > 3';
+    }
+    else {
+        echo '2 < 3';
+    }
+} else {
+    echo 'You can\'t go now';
+}
+
+// It's better to use these control structure "elseif"
