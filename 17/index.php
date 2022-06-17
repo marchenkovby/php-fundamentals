@@ -4,6 +4,8 @@
 
 // Loop: for
 
-for ($i = 0; $i < 10; $i++) {
-    echo $i;
-}
+// for ($i = 0; $i < 10; $i++) {
+//     echo $i;
+// }
+
+for ($i = 1, $j = 0; $i <= 10; $j += $i, print $i, $i++);
