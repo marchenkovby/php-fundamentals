@@ -12,7 +12,7 @@ if ($i == 1) {
     echo 2;
 } elseif ($i == 3) {
     echo 3;
-} else ($i == 4) {
+} elseif ($i == 4) {
     echo 4;
 } else {
     echo 5;
