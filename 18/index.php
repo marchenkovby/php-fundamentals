@@ -30,7 +30,7 @@ switch ($i) {
         //break;
     case 4:
         echo 4;
-        //break;
+        break;
     default:
         echo 5;
 }
