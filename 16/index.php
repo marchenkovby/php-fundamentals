@@ -22,7 +22,7 @@ while ($x < 10) {
         $y++;
     }
     echo "</tr>";
-    $x++''
+    $x++;
 }
 
 echo "</table>";
