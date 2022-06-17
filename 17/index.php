@@ -23,7 +23,7 @@
 // echo "<select>";
 
 echo "<select>";
-for($year = 1900; $year<= 2021; $year++) {
+for ($year = 1900; $year<= 2021; $year++) {
     echo "<option>{$year}</option>";
 }
 echo "<select>";
@@ -43,9 +43,9 @@ echo "<select>";
 // echo "</table>";
 
 echo "<table border=\"1\" width=\"100%\">";
-for($x = 1; $x < 10; $x++) {
+for ($x = 1; $x < 10; $x++) {
     echo "<tr>";
-    for($y = 1; $y < 10; $y++) {
+    for ($y = 1; $y < 10; $y++) {
         echo "<td>{$y}*{$x} = " . $y * $x . "</td>";
     }
     echo "</tr>";
