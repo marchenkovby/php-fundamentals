@@ -2,7 +2,7 @@
 
 // Control structures (Управляющие конструкции)
 
-// Loop: While
+// Loop: while
 
 // CRTL + SHIFT + ENTER
 // $i = 1;
