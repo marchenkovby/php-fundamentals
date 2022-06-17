@@ -23,7 +23,7 @@
 // echo "<select>";
 
 echo "<select>";
-for($year = 1900; $year<= 2021; $year++)
+for($year = 1900; $year<= 2021; $year++) {
     echo "<option>{$year}</option>";
 }
 echo "<select>";
