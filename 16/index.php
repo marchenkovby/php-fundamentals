@@ -18,7 +18,7 @@ while ($x < 10) {
     echo "<tr>";
     $y = 1;
     while ($y < 10) {
-        echo "<td>" . $y . "</td>";
+        echo "<td>" . $x*$y . "</td>";
         $y++;
     }
     echo "</tr>";
