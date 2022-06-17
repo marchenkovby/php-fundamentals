@@ -9,5 +9,3 @@ $i = 1;
 while (true) {
     echo 'test<br>';
 }
-
-while
