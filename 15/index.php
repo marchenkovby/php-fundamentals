@@ -25,4 +25,4 @@ while ($tr <= 10) {
     $tr++;
 }
 
-echo "</table>"
+echo "</table>";
