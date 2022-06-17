@@ -12,7 +12,6 @@ echo "<select>";
 
 // Task 2
 echo "<table border=\"1\" width=\"100%\">";
-
 $x = 1;
 while ($x < 10) {
     echo "<tr>";
@@ -24,5 +23,4 @@ while ($x < 10) {
     echo "</tr>";
     $x++;
 }
-
 echo "</table>";
