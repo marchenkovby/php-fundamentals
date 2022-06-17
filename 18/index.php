@@ -4,7 +4,7 @@
 
 // switch
 
-$i = 3;
+$i = 5;
 
 if ($i == 1) {
     echo 1;
