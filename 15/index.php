@@ -17,7 +17,7 @@ $tr = 1;
 while ($tr <= 10) {
     echo "<tr>";
         $td = 1;
-        while ($td <= 20) {
+        while ($td <= 10) {
             echo "<td>{$td}</td>";
             $td++;
         }
