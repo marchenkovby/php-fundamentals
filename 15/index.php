@@ -11,7 +11,7 @@
 //     $i = $i + 1; // $i++ or $i += 1;
 // }
 
-echo "<table border=\"1\" wdth=\"100%\">";
+echo "<table border=\"1\" width=\"100%\">";
 
 $tr = 1;
 while ($tr <= 10) {
