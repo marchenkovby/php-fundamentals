@@ -22,7 +22,7 @@ switch ($i) {
     case 1:
         echo 1;
         //break;
-    cases 2:
+    case 2:
         echo 2;
         //break;
     case 3:
