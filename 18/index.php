@@ -26,8 +26,8 @@ switch ($i) {
         echo 2;
         //break;
     case 3:
-        //echo 3;
-        break;
+        echo 3;
+        //break;
     case 4:
         echo 4;
         //break;
