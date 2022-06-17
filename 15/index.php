@@ -6,6 +6,7 @@
 
 // CRTL + SHIFT + ENTER
 $i = 1;
-while (true) {
-    echo 'test<br>';
+while ($i < 10) {
+    echo "{$i}<br>";
+    $i = $i + 1; // $i++ or $i += 1;
 }
