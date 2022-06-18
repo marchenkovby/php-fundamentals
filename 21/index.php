@@ -1,38 +1,71 @@
 <?php error_reporting(-1);
 
-// Control structures (Управляющие конструкции)
+// Arrays
 
-// match
+//// 1 version
+//$arr1 = array();
+//
+//// 2 version
+//$arr2 = [];
 
-$i = 3;
+//var_dump($arr1, $arr2);
 
-//$res = match ($i) {
-//    1 => 'One',
-//    2 => 'Two',
-//    3 => 'Three',
-//    4 => 'Four',
-//    5 => 'Five'
-//};
+//$arr1 = [
+//    1 => 'Petrov',
+//    3 => 'Petrov',
+//];
+//
+////var_dump($arr1);
+//
+//$arr1[5] = 'Sidorov';
+//$arr1[5] =  'Doe';
+//
+//echo '<pre>' . print_r($arr1, 1) . '</pre>';
+//echo $arr1['5'];
+//
+//echo $arr1{1};
 
-//$res = match ($i) {
-//    1, 2, 3 => 'Var < 4',
-//    4 => 'Four',
-//    default => 'Var > 4'
-//};
+// associative arrays
+//$goods = [
+//    [
+//        'title' => 'Nokia',
+//        'price' => 100,
+//        'qty' => 5
+//    ],
+//    [
+//        'title' => 'Samsung',
+//        'price' => 70,
+//        'qty' => 1
+//    ]
+//];
+//
+//echo $goods[0]['title'];
 
-$grade = 10;
-//$res = match (true) {
-//    $grade >= 10 => 'excellenet',
-//    $grade >= 7 => 'good',
-//    $grade >= 4 => 'bad',
-//    default => 'very bad'
-//};
+//echo '<pre>' . print_r($goods, 1) . '</pre>';
 
-$res = match (true) {
-    $grade >= 10 && $grade < 13 => 'excellenet',
-    $grade >= 7  && $grade < 10 => 'good',
-    $grade >= 4  && $grade < 7 => 'bad',
-    default => 'very bad'
-};
+//$nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-echo $res;
+//for ($i = 1; $i < 51; $i++ ) {
+//    $nums[] = $i;
+//}
+//echo '<pre>' . print_r($nums, 1) . '</pre>';
+
+$goods = [
+    [
+        'title' => 'Nokia',
+        'price' => 100,
+        'qty' => 5
+    ],
+    [
+        'title' => 'Samsung',
+        'price' => 70,
+        'qty' => 1
+    ]
+];
+
+for ($i = 0; $i <= 1; $i++ ){
+    echo 'Title: ' . $goods[$i]['title'] . '<br>';
+    echo 'Price: ' . $goods[$i]['price'] . '<br>';
+    echo 'Qty: ' . $goods[$i]['qty'] . '<br>';
+    echo '<hr>';
+}
