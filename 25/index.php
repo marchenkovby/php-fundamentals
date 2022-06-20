@@ -4,7 +4,10 @@
 
 function sum(...$nums)
 {
-    var_dump($nums);
+    $res = 0;
+    foreach($nums as $num) {
+        $res += $num;
+    }
 }
 
 sum(1, 2, 3, 4, 5,);
