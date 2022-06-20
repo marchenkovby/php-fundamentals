@@ -38,7 +38,7 @@ $goods = [
 for ($i = 0; $i <= 2; $i++) {
     echo "Title: {$goods[$i]['title']} <br>";
     if ($goods[$i]['price'] < 120) {
-        $goods[$i] += 15;
+        $goods[$i]['price'] += 15;
     }
    echo "Price: {$goods[$i]['price']} <br>";
    echo "Qty: {$goods[$i]['qty']} <br>";
