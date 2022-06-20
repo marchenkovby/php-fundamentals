@@ -32,4 +32,5 @@ function test($a)
     $a  += 10;
 }
 
-test();
+test($a);
+var_dump($a);
