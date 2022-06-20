@@ -37,7 +37,7 @@ function sum(int $a, int $b, int $c)
     return $a + $b + $c;
 }
 
-echo $res = sum(1 ,2.7, 3);
+echo sum(1 ,2.7, 3);
 var_dump($res);
 
 /* function sum($a, $b, $c): int
