@@ -16,8 +16,7 @@
 
 function test()
 {
-    static $a;
-    $a = 0;
+    static $a = 0;
     echo $a;
     $a++;
 }
