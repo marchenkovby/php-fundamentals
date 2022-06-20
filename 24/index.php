@@ -18,9 +18,9 @@
 
 // hello();
 
-function sum($a, $b, $c)
+function sum($a, $b, $c = 2)
 {
-    echo $a + $b + $c;
+    echo ($a + $b) * $c;
 }
 
 sum(1, 2, 3);
