@@ -38,7 +38,7 @@
 // test($a);
 // var_dump($a);
 
-function test(&$num)
+function test($num)
 {
     $num  += 10;
 }
