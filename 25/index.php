@@ -1,5 +1,7 @@
 <?php error_reporting(-1);
 
+//psalm.dev
+
 // User-defined functions
 
 // function sum($a, $b, ...$nums)
@@ -49,9 +51,16 @@ echo $res = sum(1 ,2.7, 3); */
 sum(1, 2.5, 3); */
 
 
-function sum($a, $b, $c): float
+/* function sum($a, $b, $c): float
 {
     return $a + $b + $c;
 }
 
-echo sum(1, 2.5, 3);
+echo sum(1, 2.5, 3); */
+
+function sum($term1, $term2, $factor)
+{
+    return ($term1 + $term2) * $factor;
+}
+
+echo sum(1, 2, 3);
