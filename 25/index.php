@@ -32,12 +32,12 @@ test(); */
 
 sum(1, 2.5, 3); */
 
-function sum(int $a, int $b, int $c)
+/* function sum(int $a, int $b, int $c)
 {
     return $a + $b + $c;
 }
 
-echo sum(1 ,2.7, 3);
+echo $res = sum(1 ,2.7, 3); */
 
 //var_dump($res);
 
@@ -47,3 +47,11 @@ echo sum(1 ,2.7, 3);
 }
 
 sum(1, 2.5, 3); */
+
+
+function sum(int $a, int $b, int $c): int
+{
+    return $a + $b + $c;
+}
+
+sum(1, 2.5, 3);
