@@ -5,11 +5,11 @@
 function sum($a, $b, ...$nums)
 {
     echo $a + $b;
-    $res = 0;
-    foreach($nums as $num) {
-        $res += $num;
-    }
-    echo $res;
+    // $res = 0;
+    // foreach($nums as $num) {
+    //     $res += $num;
+    // }
+    // echo $res;
 }
 
-sum(1, 2, 3, 4, 5,);
+sum(1, 2,);
