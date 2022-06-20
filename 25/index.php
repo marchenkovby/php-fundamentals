@@ -14,7 +14,7 @@
 
 // sum(1, 2, 5, 6,);
 
-function test()
+/* function test()
 {
     static $a = 0;
     echo $a;
@@ -23,4 +23,11 @@ function test()
 
 test();
 test();
-test();
+test(); */
+
+function sum($a, $b, $c)
+{
+    $echo $a + $b + $c;
+}
+
+sum(1, 2, 3);
