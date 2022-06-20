@@ -18,9 +18,16 @@
 
 // hello();
 
-function sum($a, $b, $c = 2,)
-{
-    echo ($a + $b) * $c;
-}
+// function sum($a, $b, $c = 2,)
+// {
+//     echo ($a + $b) * $c;
+// }
 
-sum(1, 2, 3);
+// sum(1, 2, 3);
+
+$a = 5;
+
+function test($a)
+{
+    $a  += 10;
+}
