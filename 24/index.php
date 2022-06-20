@@ -25,14 +25,24 @@
 
 // sum(1, 2, 3);
 
-$a = 5;
+// $a = 5;
 
-function test($a)
+// function test($a)
+// {
+//     global $a;
+//     $a  += 10;
+//     var_dump($a);
+// }
+
+// var_dump($a);
+// test($a);
+// var_dump($a);
+
+function test(&$num)
 {
-    $a  += 10;
-    var_dump($a);
+    $num  += 10;
 }
 
-var_dump($a);
-test($a);
-var_dump($a);
+$num = 20;
+test($num);
+var_dump($num); //20
