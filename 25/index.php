@@ -12,4 +12,4 @@ function sum($a, $b, ...$nums)
     echo $res;
 }
 
-sum(1, 2,);
+sum(1, 2, 5, 6,);
