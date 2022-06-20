@@ -31,3 +31,5 @@ function test($a)
 {
     $a  += 10;
 }
+
+test();
