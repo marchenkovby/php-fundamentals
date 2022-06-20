@@ -2,8 +2,9 @@
 
 // User-defined functions
 
-function sum(...$nums)
+function sum($a, $b, ...$nums)
 {
+    echo $a + $b;
     $res = 0;
     foreach($nums as $num) {
         $res += $num;
