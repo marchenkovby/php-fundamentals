@@ -7,4 +7,4 @@ function sum(...$nums)
     var_dump();
 }
 
-sum();
+sum(1, 2, 3, 4, 5,);
