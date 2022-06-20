@@ -17,6 +17,10 @@ $nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //     }
 // }
 
+for ($i = 0; $i <= 10; $i += 2) {
+    echo $nums[$i] . "<br>";
+}
+
 $goods = [
     [
         'title' => 'Nokia',
@@ -46,12 +50,12 @@ $goods = [
 // }
 
 
-foreach ($goods as &$good) {
-   echo "Title: {$good['title']} <br>";
-   if ($good['price'] < 120) {
-        $good['price'] += 15;
-   }
-   echo "Price: {$good['price']} <br>";
-   echo "Qty: {$good['qty']} <br>";
-   echo '<hr>';
-}
+// foreach ($goods as &$good) {
+//    echo "Title: {$good['title']} <br>";
+//    if ($good['price'] < 120) {
+//         $good['price'] += 15;
+//    }
+//    echo "Price: {$good['price']} <br>";
+//    echo "Qty: {$good['qty']} <br>";
+//    echo '<hr>';
+// }
