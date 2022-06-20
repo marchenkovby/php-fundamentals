@@ -38,7 +38,8 @@ function sum(int $a, int $b, int $c)
 }
 
 echo sum(1 ,2.7, 3);
-var_dump($res);
+
+//var_dump($res);
 
 /* function sum($a, $b, $c): int
 {
