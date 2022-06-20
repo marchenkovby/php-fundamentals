@@ -18,7 +18,7 @@
 
 // hello();
 
-function sum($a, $b, $c = 2)
+function sum($a, $b, $c = 2,)
 {
     echo ($a + $b) * $c;
 }
