@@ -4,7 +4,9 @@
 
 function test() 
 {
-    echo 'Hello, World';
+    echo '<p>Hello, World</p>';
 }
 
+test();
+test();
 test();
