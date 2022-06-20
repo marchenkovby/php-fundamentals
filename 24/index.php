@@ -30,8 +30,9 @@ $a = 5;
 function test($a)
 {
     $a  += 10;
+    var_dump($a);
 }
 
 var_dump($a);
-test($a);
+//test($a);
 var_dump($a);
