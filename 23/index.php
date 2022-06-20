@@ -36,8 +36,8 @@ $goods = [
 ];
 
 for ($i = 0; $i <= 2; $i++) {
-   echo "Title: {$good[$i]['title']} <br>";
-   echo "Price: {$good[$i]['price']} <br>";
-   echo "Qty: {$good[$i]['qty']} <br>";
+   echo "Title: {$goods[$i]['title']} <br>";
+   echo "Price: {$goods[$i]['price']} <br>";
+   echo "Qty: {$goods[$i]['qty']} <br>";
    echo '<hr>';
 }
