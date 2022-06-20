@@ -49,7 +49,7 @@ echo $res = sum(1 ,2.7, 3); */
 sum(1, 2.5, 3); */
 
 
-function sum(int $a, int $b, int $c): int
+function sum($a, $b, $c): int
 {
     return $a + $b + $c;
 }
