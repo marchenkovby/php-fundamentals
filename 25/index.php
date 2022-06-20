@@ -25,9 +25,23 @@ test();
 test();
 test(); */
 
-function sum(int $a, int $b, int $c)
+/* function sum(int $a, int $b, int $c)
 {
     echo $a + $b + $c;
 }
 
-sum(1, 2.5, 3);
+sum(1, 2.5, 3); */
+
+function test()
+{
+
+}
+
+var_dump(test());
+
+/* function sum($a, $b, $c): int
+{
+    return $a + $b + $c;
+}
+
+sum(1, 2.5, 3); */
