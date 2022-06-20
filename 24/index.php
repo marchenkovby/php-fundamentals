@@ -34,5 +34,5 @@ function test($a)
 }
 
 var_dump($a);
-//test($a);
+test($a);
 var_dump($a);
