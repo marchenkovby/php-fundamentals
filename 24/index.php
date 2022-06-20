@@ -17,4 +17,4 @@ function hello($name = 'guest') // argument or parametr
     echo "<p>Hello, {$name}</p>";
 }
 
-hello('Jonh');
+hello();
