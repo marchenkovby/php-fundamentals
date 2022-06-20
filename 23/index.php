@@ -17,9 +17,9 @@ $nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 //     }
 // }
 
-for ($i = 1; $i <= 10; $i += 2) {
-    echo $nums[$i] . "<br>";
-}
+// for ($i = 1; $i <= 10; $i += 2) {
+//     echo $nums[$i] . "<br>";
+// }
 
 $goods = [
     [
@@ -44,6 +44,7 @@ $goods = [
 //     if ($goods[$i]['price'] < 120) {
 //         $goods[$i]['price'] += 15;
 //     }
+    $goods[$i]['price'] = ($goods[$i]['price'] < 120) ? $goods[$i]['price'] += 15 : $goods[$i]['price'];
 //    echo "Price: {$goods[$i]['price']} <br>";
 //    echo "Qty: {$goods[$i]['qty']} <br>";
 //    echo '<hr>';
