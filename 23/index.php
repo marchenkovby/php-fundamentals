@@ -47,10 +47,10 @@ $goods = [
 
 
 foreach ($goods as &$good) {
-    if ($good['price'] < 120) {
-        $good['price'] += 15;
-    }
    echo "Title: {$good['title']} <br>";
+   if ($good['price'] < 120) {
+        $good['price'] += 15;
+   }
    echo "Price: {$good['price']} <br>";
    echo "Qty: {$good['qty']} <br>";
    echo '<hr>';
