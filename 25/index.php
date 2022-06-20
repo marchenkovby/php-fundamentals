@@ -54,4 +54,4 @@ function sum($a, $b, $c): int
     return $a + $b + $c;
 }
 
-sum(1, 2.5, 3);
+echo sum(1, 2.5, 3);
