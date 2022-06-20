@@ -8,6 +8,7 @@ function sum(...$nums)
     foreach($nums as $num) {
         $res += $num;
     }
+    echo $res;
 }
 
 sum(1, 2, 3, 4, 5,);
