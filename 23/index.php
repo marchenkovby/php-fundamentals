@@ -35,12 +35,23 @@ $goods = [
     ]
 ];
 
-for ($i = 0; $i <= 2; $i++) {
-    echo "Title: {$goods[$i]['title']} <br>";
-    if ($goods[$i]['price'] < 120) {
-        $goods[$i]['price'] += 15;
+// for ($i = 0; $i <= 2; $i++) {
+//     echo "Title: {$goods[$i]['title']} <br>";
+//     if ($goods[$i]['price'] < 120) {
+//         $goods[$i]['price'] += 15;
+//     }
+//    echo "Price: {$goods[$i]['price']} <br>";
+//    echo "Qty: {$goods[$i]['qty']} <br>";
+//    echo '<hr>';
+// }
+
+
+foreach ($goods as &$good) {
+    if ($good['price'] < 120) {
+        $good['price'] += 15;
     }
-   echo "Price: {$goods[$i]['price']} <br>";
-   echo "Qty: {$goods[$i]['qty']} <br>";
+   echo "Title: {$good['title']} <br>";
+   echo "Price: {$good['price']} <br>";
+   echo "Qty: {$good['qty']} <br>";
    echo '<hr>';
 }
