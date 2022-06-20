@@ -11,10 +11,16 @@
 // test();
 // test();
 
+// function hello($name = 'guest') // argument or parametr
+// {
+//     echo "<p>Hello, {$name}</p>";
+// }
 
-function hello($name = 'guest') // argument or parametr
+// hello();
+
+function sum($a, $b, $c)
 {
-    echo "<p>Hello, {$name}</p>";
+    echo $a + $b + $c;
 }
 
-hello();
+sum(1, 2, 3);
