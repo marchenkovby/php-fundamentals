@@ -2,14 +2,24 @@
 
 // User-defined functions
 
-function sum($a, $b, ...$nums)
-{
-    $res = $a + $b;
+// function sum($a, $b, ...$nums)
+// {
+//     $res = $a + $b;
     
-    foreach($nums as $num) {
-        $res += $num;
-    }
-    echo $res;
+//     foreach($nums as $num) {
+//         $res += $num;
+//     }
+//     echo $res;
+// }
+
+// sum(1, 2, 5, 6,);
+
+function test()
+{
+    $a = 0;
+    echo $a;
+    $a++;
 }
 
-sum(1, 2, 5, 6,);
+test();
+test();
