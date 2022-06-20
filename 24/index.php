@@ -12,9 +12,9 @@
 // test();
 
 
-function hello($x) // argument or parametr
+function hello($name = 'guest') // argument or parametr
 {
-    echo "<p>Hello, {$x}</p>";
+    echo "<p>Hello, {$name}</p>";
 }
 
 hello('Jonh');
