@@ -25,7 +25,7 @@ test();
 test();
 test(); */
 
-function sum($a, $b, $c)
+function sum(int $a, int $b, int $c)
 {
     echo $a + $b + $c;
 }
