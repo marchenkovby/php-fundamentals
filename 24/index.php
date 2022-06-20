@@ -2,9 +2,9 @@
 
 // User-defined functions
 
-test();
-
 function test() 
 {
     echo 'Hello, World';
 }
+
+test();
