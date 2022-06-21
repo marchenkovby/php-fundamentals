@@ -14,4 +14,4 @@ function get_count(...$arr)
     return $qty;
 }
 
-get_count($arr);
+echo get_count($arr);
