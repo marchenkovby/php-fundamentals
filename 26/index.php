@@ -9,7 +9,7 @@ function get_count(...$arr)
 {
     $qty = 0;
     foreach ($arr as $k => $v) {
-        $qty++
+        $qty++;
     }
     return $qty;
 }
