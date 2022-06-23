@@ -28,7 +28,7 @@ function get_count(...$arr)
     foreach ($arr as $k => $v) {
         echo $v . '<br>';
     }
-    var_dump($arr);
+    //var_dump($arr);
 }
 
 get_count($arr);
