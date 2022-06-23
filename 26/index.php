@@ -52,4 +52,4 @@ function get_table($tr, $td)
     return $table;
 }
 
-get_table (5, 5);
+get_table(5, 5);
