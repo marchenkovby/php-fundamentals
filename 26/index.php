@@ -24,10 +24,11 @@ $goods = [
 
 function get_count(...$arr)
 {
-    $qty = 0;
-    foreach ($arr as $k => $v) {
-        echo $v . '<br>';
-    }
+    // $qty = 0;
+    // foreach ($arr as $k => $v) {
+    //     echo $v . '<br>';
+    // }
+    var_dump($arr);
 }
 
 echo get_count($arr);
