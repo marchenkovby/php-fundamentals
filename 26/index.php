@@ -25,8 +25,8 @@ $goods = [
 function get_count($arr)
 {
     $qty = 0;
-    foreach ($arr as $k => $v) {
-        $qty++;
+    foreach ($arr as $k) {
+        $qty += $k;
     }
     return $qty;
 }
