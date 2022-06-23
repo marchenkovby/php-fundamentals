@@ -38,18 +38,18 @@ echo get_count($goods);
 
 // 2 
 
-function table($x, $y) {
-    echo "<table border=\"1\" width=\"100%\">";
-    while ($x < 10) {
-        echo "<tr>";
-        while ($y < 10) {
-            echo "<td>{$y}*{$x} = " . $y * $x . "</td>";
-            $y++;
+function get_table($tr, $td) 
+{
+    $table = 'echo "<table border=\"1\" width=\"100%\">';
+
+    for ($x = 1; $x < $tr; $x++) {
+        $table .= "<tr>";
+        for ($y = 1; $y < $td; $y++) {
+            $table .= "<td>{$y}*{$x} = " . $y * $x . "</td>";
         }
-        echo "</tr>";
-        $x++;
+        $table .= "</tr>";
     }
-    echo "</table>";
+    return $table;
 }
 
-table (5, 5);
+get_table (5, 5);
