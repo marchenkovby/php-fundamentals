@@ -43,4 +43,4 @@ function sum(...$numbers) {
     return $acc;
 }
 
-echo sum(1, 2, 3, 4);
+echo sum($arr);
