@@ -22,7 +22,7 @@ $goods = [
     ]
 ];
 
-function get_count($arr)
+function get_count(...$arr)
 {
     $qty = 0;
     foreach ($arr as $k) {
