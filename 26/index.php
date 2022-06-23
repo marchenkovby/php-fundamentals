@@ -32,3 +32,5 @@ function get_count($arr)
 }
 
 echo get_count($arr);
+echo '<br>';
+echo get_count($goods);
