@@ -37,7 +37,6 @@ echo '<br>';
 echo get_count($goods);
 
 // 2 
-
 function get_table($tr, $td) 
 {
     $table = 'echo "<table border=\"1\" width=\"100%\">';
