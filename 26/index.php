@@ -26,7 +26,7 @@ function get_count(...$arr)
 {
     $qty = 0;
     foreach ($arr as $k => $v) {
-        echo $k . '<br>';
+        echo $v . '<br>';
     }
 }
 
