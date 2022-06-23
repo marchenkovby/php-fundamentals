@@ -22,25 +22,15 @@ $goods = [
     ]
 ];
 
-// function get_count(...$arr)
-// {
-//     $qty = 0;
-//     foreach ($arr as $k) {
-//         $qty += $k;
-//     }
-//     return $qty;
-// }
-
-// echo get_count($arr);
-// echo '<br>';
-// echo get_count($goods);
-
-function sum(...$numbers) {
-    $acc = 0;
-    foreach ($numbers as $n) {
-        $acc += $n;
+function get_count($arr)
+{
+    $qty = 0;
+    foreach ($arr as $k) {
+        $qty++;
     }
-    return $acc;
+    return $qty;
 }
 
-echo sum($arr);
+echo get_count($arr);
+echo '<br>';
+echo get_count($goods);
