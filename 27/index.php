@@ -1,13 +1,15 @@
 <?php error_reporting(-1);
 
-function pingAddress($ip) {
-    $pingresult = exec("/bin/ping -n 3 $ip", $outcome, $status);
-    if (0 == $status) {
-        $status = "alive";
-    } else {
-        $status = "dead";
-    }
-    echo "The IP address, $ip, is  ".$status;
-}
+$host="192.168.0.104";
 
-pingAddress("google.by");
+exec("ping -c 4 " . $host, $output, $result);
+
+print_r($output);
+
+if ($result == 0)
+
+echo "Ping successful!";
+
+else
+
+echo "Ping unsuccessful!";
