@@ -10,4 +10,4 @@ function pingAddress($ip) {
     echo "The IP address, $ip, is  ".$status;
 }
 
-pingAddress("127.0.0.1");
+pingAddress("google.by");
