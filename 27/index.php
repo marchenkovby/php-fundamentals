@@ -1,6 +1,6 @@
 <?php error_reporting(-1);
 
-include __DIR__ . '/funcs.php'; 
+include 'funcs.php'; 
 
 var_dump(__DIR__);
 
