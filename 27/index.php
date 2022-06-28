@@ -1,7 +1,7 @@
 <?php error_reporting(-1);
 
-include 'funcs.php'; 
+include 'funcs2.php'; 
 
-var_dump(__DIR__);
+echo ' Hello!';
 
-echo get_table(5, 7);
+//echo get_table(5, 7);
