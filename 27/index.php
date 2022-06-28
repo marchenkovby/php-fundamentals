@@ -2,7 +2,7 @@
 
 function get_table($tr, $td) 
 {
-    $table = 'echo "<table border=\"1\" width=\"100%\">';
+    $table = '<table border=\"1\" width=\"100%\">';
     for ($x = 1; $x <= $tr; $x++) {
         $table .= "<tr>";
         for ($y = 1; $y <= $td; $y++) {
@@ -13,4 +13,4 @@ function get_table($tr, $td)
     return $table;
 }
 
-get_table(5, 7);
+echo get_table(5, 7);
