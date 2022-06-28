@@ -24,7 +24,7 @@ endforeach; ?>
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
     
 <?php foreach ($nums as $num): ?>
-    <?php echo "<p>$num</p>;" ?>
+    <?= "<p>$num</p>;" ?>
  <?php endforeach; ?>
 
 Distinctio voluptas culpa minima, quidem ipsum reiciendis, ratione perferendis repellat autem sunt ad, a enim error labore nulla voluptate magnam eaque quos!</p>
