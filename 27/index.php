@@ -4,8 +4,11 @@
 
 // echo ' Hello!';
 
-//echo get_table(5, 7);
+// echo get_table(5, 7);
 
-require 'test.php';
-require 'test.php';
-require 'test.php';
+// require 'test.php';
+// require 'test.php';
+// require 'test.php';
+
+require 'funcs2.php'; 
+echo get_table(5, 7);
