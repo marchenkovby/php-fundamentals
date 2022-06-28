@@ -1,7 +1,9 @@
 <?php error_reporting(-1);
 
-require 'funcs2.php'; 
+// include 'funcs2.php'; 
 
-echo ' Hello!';
+// echo ' Hello!';
 
 //echo get_table(5, 7);
+
+require 'test.php';
