@@ -7,3 +7,5 @@
 //echo get_table(5, 7);
 
 require 'test.php';
+require 'test.php';
+require 'test.php';
