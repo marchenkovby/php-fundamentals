@@ -15,4 +15,5 @@
 
 require_once 'conf.php';
 
+/** $var array $date */
 print_r($date);
