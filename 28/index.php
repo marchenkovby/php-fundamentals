@@ -15,14 +15,18 @@
 
 $nums = [1, 2, 3, 4, 5];
 
-foreach ($nums as $num) {
+foreach ($nums as $num):
     echo "<h3>Начинаю выводить цифру</h3>";
     echo "<p>$num</p>";
     echo "<h3>Заканчиваю выводить цифру</h3>";
-}
+endforeach; ?>
 
-?>
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    
+<?php foreach ($nums as $num): ?>
+    <?php echo "<p>$num</p>;" ?>
+ <?php endforeach; ?>
 
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptas culpa minima, quidem ipsum reiciendis, ratione perferendis repellat autem sunt ad, a enim error labore nulla voluptate magnam eaque quos!</p>
+Distinctio voluptas culpa minima, quidem ipsum reiciendis, ratione perferendis repellat autem sunt ad, a enim error labore nulla voluptate magnam eaque quos!</p>
 </body>
 </html>
