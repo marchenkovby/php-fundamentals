@@ -10,5 +10,5 @@
 // require 'test.php';
 // require 'test.php';
 
-require 'funcs2.php'; 
+require 'funcs.php'; 
 echo get_table(5, 7);
