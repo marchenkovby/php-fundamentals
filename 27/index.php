@@ -13,7 +13,7 @@
 // require 'funcs.php'; 
 // echo get_table(5, 7);
 
-$data = require_once 'conf.php';
+$data = require_once 'src/conf.php';
 
 /** $var array $date */
 print_r($data);
