@@ -13,4 +13,4 @@ function get_table($tr, $td)
     return $table;
 }
 
-echo get_table(5, 7);
+get_table(5, 7);
