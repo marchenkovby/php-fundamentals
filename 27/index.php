@@ -14,3 +14,5 @@
 // echo get_table(5, 7);
 
 require_once 'conf.php';
+
+print_r($date);
