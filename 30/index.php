@@ -39,7 +39,7 @@ function test()
 {   
     $arr = [];
     for ($i = 1; $i <= 100; $i++) {
-        $arr = [$i]; 
+        $arr[] = $i; 
     }
     return $arr;
 }
