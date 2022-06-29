@@ -47,4 +47,19 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // debug(array_values($car));
 
-debug(array_unique($nums));
+// debug(array_unique($nums));
+
+function odd($var)
+{
+    return $var % 2;
+}
+
+function even($var)
+{
+    return !($var % 2);
+}
+
+// debug(array_filter($nums, "even"))
+debug(array_filter($nums, function($var) {
+    return !($var %2 );
+}));
