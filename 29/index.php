@@ -61,5 +61,5 @@ function even($var)
 
 // debug(array_filter($nums, "even"))
 debug(array_filter($nums, function($var) {
-    return !($var %2 );
+    return $var %2;
 }));
