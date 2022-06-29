@@ -30,5 +30,5 @@ function sum_array(array $arr)
     return $qty;
 }
 
-//echo sum_array($nums);
-echo array_sum($nums); 
+echo sum_array($nums);
+//echo array_sum($nums); 
