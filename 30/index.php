@@ -44,4 +44,4 @@ function test()
     return $arr;
 }
 
-echo test();
+var_dump(test());
