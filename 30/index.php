@@ -45,5 +45,5 @@ function test()
 }
 
 //debug(test());
-debug(range(1, 100))
+debug(range(1, 100));
 
