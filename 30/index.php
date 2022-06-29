@@ -24,7 +24,6 @@ echo user_count($nums);
 function sum_array(array $arr)
 {   $qty = 0;
     foreach ($arr as $key => $value) {
-        $qty = $value;
     }
     return $qty;
 }
