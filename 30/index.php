@@ -29,4 +29,4 @@ function sum_array ($array $arr)
     return $qty;
 }
 
-echo sum_array($qty);
+echo sum_array($nums);
