@@ -41,4 +41,4 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // var_dump(in_array(2021, $car));
 
-var_dump(array_search(3, $num));
+var_dump(array_search(3, $nums));
