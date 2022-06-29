@@ -45,4 +45,6 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // debug(array_keys($car));
 
-debug(array_values($goods));
+// debug(array_values($car));
+
+debug(array_unique($nums));
