@@ -32,3 +32,16 @@ function sum_array(array $arr)
 
 echo sum_array($nums);
 //echo array_sum($nums); 
+
+
+// 3
+function test()
+{   
+    $arr = [];
+    for ($i = 1; $i <= 100; $i++) {
+        $arr[$i] = [$i]; 
+    }
+    return $arr;
+}
+
+echo test();
