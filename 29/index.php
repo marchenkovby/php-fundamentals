@@ -37,4 +37,4 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // debug(array_count_values($nums)e);
 
-echo array_key_exists('brand', $car);
+echo array_key_exists('brand1', $car);
