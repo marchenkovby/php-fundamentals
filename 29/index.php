@@ -35,4 +35,6 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // echo count($goods, 1);
 
-debug(array_count_values($nums));
+// debug(array_count_values($nums)e);
+
+echo array_key_exists('brand', $car);
