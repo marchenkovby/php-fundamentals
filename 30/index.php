@@ -17,7 +17,7 @@ function user_count(array $arr): int
     return $qty;
 }
 
-echo user_count($nums);
+//echo user_count($nums);
 
 
 // 2
