@@ -39,4 +39,4 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // var_dump(array_key_exists('brand', $car));
 
-var_dump(in_array('brand', $car));
+var_dump(in_array(2021, $car));
