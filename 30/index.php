@@ -44,4 +44,6 @@ function test()
     return $arr;
 }
 
-debug(test());
+//debug(test());
+debug(range(1, 100))
+
