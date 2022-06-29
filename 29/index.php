@@ -43,4 +43,6 @@ $nums = [1, 2, 3, 1, 4, 5, 3, 2, 6, 7, 7, 8, 8, 9, 2, 5,];
 
 // var_dump(array_search(3, $nums));
 
-debug(array_keys($goods));
+// debug(array_keys($car));
+
+debug(array_values($car));
