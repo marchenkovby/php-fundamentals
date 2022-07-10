@@ -12,7 +12,23 @@
 </head>
 <body>
 
-<?php if(empty($_POST['name']) || empty($_POST['email'])): ?>
+<?php
+
+/*if (isset($_POST['name'])) {
+    $name = $_POST['name'];
+} else {
+    $name = '';
+}*/
+
+$name = $_POST['name'] ?? '';
+$email = $_POST['email'] ?? '';
+
+?>
+
+1   =   true    !   false
+''  =   false   !   true
+
+<?php if(!trim($name) || !trim($email)): ?>
 
     <?php if (!empty($_POST)): ?>
         <p>Fields required</p>
@@ -34,5 +50,3 @@
 
 </body>
 </html>
-
-10:37
