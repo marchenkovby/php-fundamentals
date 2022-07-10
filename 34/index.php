@@ -1,38 +1,5 @@
 <?php error_reporting(-1);
 
-// print_r($_POST);
-
-//isset()
-//empty()
-
-/*$x = '';
-
-if (isset($x)) {
-    var_dump($x);
-}
-
-if (empty($x)) {
-    echo 'X is empty';
-}*/
-
-/*if (!empty($_POST['agree'])) {
-    var_dump($_POST);
-    foreach($_POST['lang'] as $lang) {
-        var_dump($lang);
-    }
-}
-
-if (isset($_POST['form1'])) {
-    echo 'Was send first form';
-}
-
-if (isset($_POST['form2'])) {
-    echo 'Was send second form';
-}*/
-
-//var_dump($_GET);
-
-var_dump($_REQUEST);
 ?>
 <!doctype html>
 <html lang="en">
@@ -45,31 +12,27 @@ var_dump($_REQUEST);
 </head>
 <body>
 
-<form action="index.php" method="post">
+<?php if(empty($_POST['name']) || empty($_POST['email'])): ?>
 
-    <p>Name: <input type="text" name="name"></p>
-    <p>E-mail: <input type="email" name="email"></p>
-    <p>Message: <textarea name="message" cols="30" rows="10"></textarea></p>
-    <p>
-        <select name="lang[]" multiple>
-            <option value="ru">Russian</option>
-            <option value="en">English</option>
-            <option value="fr">France</option>
-        </select>
-    </p>
-    <p>Agree: <input type="checkbox" name="agree"></p>
-    <p><button name="form1">Send</button></p>
+    <?php if (!empty($_POST)): ?>
+        <p>Fields required</p>
+    <?php endif; ?>
 
-</form>
-<hr>
-<form action="index.php" method="get">
 
-    <p>Search: <input type="text" name="s"></p>
-    <p><button name="form2" value="search">Send</button></p>
+    <form action="index.php" method="post">
+        <p>Name: <input type="text" name="name"></p>
+        <p>E-mail: <input type="text" name="email"></p>
+        <p><button name="send_form">Send</button></p>
+    </form>
 
-</form>
+<?php else: ?>
 
-<a href="?name=Andre&age=30">Link</a>
+    <p>Name: <?= $_POST['name']; ?></p>
+    <p>Email: <?= $_POST['email']; ?></p>
+
+<?php endif; ?>
 
 </body>
 </html>
+
+10:37
