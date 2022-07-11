@@ -4,17 +4,55 @@ error_reporting(-1);
 
 session_start();
 
-//$_SESSION['test'] = 'test';
-//$_SESSION['test2'] = 'test2';
+$login = 'admin';
+$password = '$2y$10$4gkqsB3g9yOzo9HM98N1k.w/MfCzlffA01F9qhTj4aQYuad/M1Msm';
 
-var_dump($_SESSION);
 
-//echo $_SESSION['test'];
+if(!empty($_POST)) {
+    if ($_POST['login'] == $login && password_verify($_POST['password'], $password)) {
+        $_SESSION['auth'] = 1;
+        $_SESSION['res'] = 'Success';
+        header("Location: secret.php");
+        exit;
+    } else {
+        $_SESSION['res'] = 'Error';
+        header("Location: index.php");
+        die;
+    }
+}
+?>
 
-$_SESSION['count'] = isset($_SESSION['count']) ? ++$_SESSION['count'] : 1;
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index page</title>
+</head>
+<body>
 
-unset($_SESSION['test'], $_SESSION['test2']);
+<h1>This page view all users</h1>
+
+<ul>
+    <li><a href="secret.php">Secret page</a></li>
+</ul>
+
+<?php
+
+if (isset($_SESSION['res'])) {
+    echo $_SESSION['res'];
+    unset($_SESSION['res']);
+}
 
 ?>
 
-<a href="index2.php">index2.php</a>
+<form method="post">
+    Login: <input type="text" name="login">
+    Password: <input type="password" name="password">
+    <button>Login</button>
+</form>
+
+</body>
+</html>
