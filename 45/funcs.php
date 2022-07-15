@@ -36,3 +36,36 @@ function registration(): bool
 
 
 }
+
+function login(): bool
+{
+    global $pdo;
+
+    $login = !empty($_POST['login']) ? trim($_POST['login']) :  '';
+    $pass = !empty($_POST['pass']) ? trim($_POST['pass']) :  '';
+
+    if (empty($login) || empty($pass)) {
+        $_SESSION['errors'] = 'Name or pass are required';
+        return false;
+    }
+
+    $res = $pdo->prepare("SELECT * FROM users WHERE login = ?");
+    $res->execute([$login]);
+
+    if (!$user = $res->fetch()) {
+        $_SESSION['errors'] = 'Name or pass with errors';
+        return false;
+    }
+
+    if (!password_verify($pass, $user['pass'])) {
+        $_SESSION['errors'] = 'Name or pass with errors';
+        return false;
+
+    } else {
+        $_SESSION['success'] = 'Autorization OK';
+        $_SESSION['user']['name'] = $user['login'];
+        $_SESSION['user']['id'] = $user['id'];
+        return true;
+    }
+}
+
