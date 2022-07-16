@@ -62,10 +62,43 @@ function login(): bool
         return false;
 
     } else {
-        $_SESSION['success'] = 'Autorization OK';
+        $_SESSION['success'] = 'Authorization OK';
         $_SESSION['user']['name'] = $user['login'];
         $_SESSION['user']['id'] = $user['id'];
         return true;
     }
+}
+
+function save_message(): bool
+{
+    global $pdo;
+
+    $message = !empty($_POST['message']) ? trim($_POST['message']) : '';
+
+    if (!isset($_SESSION['user']['name'])) {
+        $_SESSION['errors'] = 'Authorization required';
+        return false;
+    }
+
+    if (empty($message)) {
+        $_SESSION['errors'] = 'Text message empty';
+        return false;
+    }
+
+    $res = $pdo->prepare(("INSERT INTO messages (name, message) VALUES (?, ?)"));
+    if ($res->execute([$_SESSION['user']['name'], $message])) {
+        $_SESSION['success'] = 'Message add';
+        return true;
+    } else {
+        $_SESSION['errors'] = 'Error';
+        return false;
+    }
+}
+
+function get_messages(): array
+{
+    global $pdo;
+    $res = $pdo->query("SELECT * FROM messages");
+    return $res->fetchAll();
 }
 

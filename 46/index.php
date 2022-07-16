@@ -7,6 +7,7 @@ session_start();
 require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/funcs.php';
 
+
 if (isset($_POST['register'])) {
     registration();
     header("Location: index.php");
@@ -19,12 +20,20 @@ if (isset($_POST['auth'])) {
     exit;
 }
 
+if (isset($_POST['add'])) {
+    save_message();
+    header("Location: index.php");
+    exit;
+}
+
 if (isset($_GET['do']) && $_GET['do'] == 'exit') {
     if (!empty($_SESSION['user'])) {
         unset($_SESSION['user']);
     }
     header("Location: index.php");
 }
+
+$messages = get_messages();
 
 ?>
 <!doctype html>
@@ -130,7 +139,8 @@ if (isset($_GET['do']) && $_GET['do'] == 'exit') {
 
         <div class="row">
             <div class="col-md-6 offset-md-3">
-                <p>Добро пожаловать, <?= htmlspecialchars($_SESSION['user']['name']) ?>! <a href="?do=exit">Log out</a></p>
+                <p>Добро пожаловать, <?= htmlspecialchars($_SESSION['user']['name']) ?>! <a href="?do=exit">Log out</a>
+                </p>
             </div>
         </div>
 
@@ -150,20 +160,22 @@ if (isset($_GET['do']) && $_GET['do'] == 'exit') {
 
     <?php endif; ?>
 
-    <div class="row">
-        <div class="col-md-6 offset-md-3">
-            <hr>
-            <div class="card my-3">
-                <div class="card-body">
-                    <h5 class="card-title">Автор: User</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio
-                        est illum in ipsum nemo nostrum odit optio quibusdam velit. Commodi dolores dolorum ex facere
-                        maiores porro, reprehenderit velit voluptatum.</p>
-                    <p>Дата: 01.01.2000</p>
+    <?php if (!empty($messages)): ?>
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <hr>
+                <?php foreach ($messages as $message): ?>
+                <div class="card my-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Автор: <?= htmlspecialchars($message['name']); ?></h5>
+                        <p class="card-text"><?= nl2br(htmlspecialchars($message['message'])); ?></p>
+                        <p>Дата: <?= $message['created_at']; ?></p>
+                    </div>
                 </div>
+                <?php endforeach; ?>
             </div>
         </div>
-    </div>
+    <?php endif; ?>
 
 </div>
 
