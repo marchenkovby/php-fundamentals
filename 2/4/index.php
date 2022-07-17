@@ -9,14 +9,8 @@ function debug(object $data): void
     echo '<pre>' . print_r($data, true) . '</pre>';
 }
 
-$car1 = new Car();
-$car1->color = 'black';
-$car1->brand = 'volvo';
-
-
-$car2 = new Car();
-$car2->color = 'black';
-$car2->brand = 'bmw';
+$car1 = new Car('black', 4, 180, 'volvo');
+$car2 = new Car('black', 4, 180, 'bmv');
 
 echo $car1->getCarInfo();
 echo $car2->getCarInfo();
