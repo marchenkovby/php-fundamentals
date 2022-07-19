@@ -9,7 +9,7 @@ class File
     {
         $this->file = $file;
         if (!is_writable($this->file)) {
-            echo "File {$file} not writable";
+            echo "File {$this->file} not writable";
             exit;
         }
         $this->fp = fopen($file, 'a');
