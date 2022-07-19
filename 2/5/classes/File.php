@@ -15,17 +15,17 @@ class File
         $this->fp = fopen($this->file, 'a');
     }
 
-    public function __destruct()
-    {
-        fclose($this->$fp);
-    }
+    // public function __destruct()
+    // {
+    //     fclose($this->$fp);
+    // }
 
-    public function write($text)
-    {
-            if (fwrite($this->fp, $text) === FALSE) {
-                echo "File {$this->file} not writable";
-                exit;
-            }
+    // public function write($text)
+    // {
+    //         if (fwrite($this->fp, $text) === FALSE) {
+    //             echo "File {$this->file} not writable";
+    //             exit;
+    //         }
 
-    }
+    // }
 }
