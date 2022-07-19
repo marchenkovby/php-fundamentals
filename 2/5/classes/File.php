@@ -17,7 +17,7 @@ class File
 
     public function __destruct()
     {
-        fclose($this->$fp);
+        fclose($this->fp);
     }
 
     public function write($text)
