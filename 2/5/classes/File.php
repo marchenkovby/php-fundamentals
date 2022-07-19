@@ -8,7 +8,7 @@ class File
     public function __construct($file)
     {
         $this->file = $file;
-        if (is_writable($this->file)) {
+        if (!is_writable($this->file)) {
             echo "File {$file} not writable";
             exit;
         }
