@@ -1,7 +1,7 @@
 <?php
 
 $a = true;
-$b = false;
+$b = true;
 
 if ($a or $b) {
     echo 'OK';
