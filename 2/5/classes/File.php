@@ -22,7 +22,7 @@ class File
 
     public function write($text)
     {
-            if (fwrite($this->fp, $text) === FALSE) {
+            if (fwrite($this->fp, $text . PHP_EOL) === FALSE) {
                 echo "File {$this->file} not writable";
                 exit;
             }
