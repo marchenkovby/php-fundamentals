@@ -12,7 +12,7 @@ class File
             echo "File {$this->file} not writable";
             exit;
         }
-        $this->fp = fopen($file, 'a');
+        $this->fp = fopen($this->file, 'a');
     }
 
     public function __destruct()
