@@ -11,3 +11,7 @@ function debug(object $data): void
 
 
 $file = new File(__DIR__ . '/file.txt');
+$file->write('Stroke1');
+$file->write('Stroke2');
+$file->write('Stroke3');
+$file->write('Stroke4');
