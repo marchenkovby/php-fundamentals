@@ -8,3 +8,9 @@ if ($a or $b) {
 } else {
     echo 'NO<br>';
 }
+
+if ($a xor $b) {
+    echo 'OK<br>';
+} else {
+    echo 'NO<br>';
+}
