@@ -13,6 +13,7 @@ class Car
         $this->wheels = $wheels;
         $this->speed = $speed;
         $this->brand = $brand;
+        echo __METHOD__;
     }
 
     public function Car($color, $wheels = 4, $speed = 180, $brand)
