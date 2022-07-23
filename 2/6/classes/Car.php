@@ -20,7 +20,12 @@ class Car
 
     public static function getCount()
     {
-    
+        return self::$countCar;
+    }
+
+    public function $Test()
+    {
+        echo 'Hello, World!';
     }
 
     public function getCarInfo()

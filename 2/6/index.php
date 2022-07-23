@@ -16,3 +16,6 @@ echo Car::$countCar;
 
 echo $car1->getCarInfo();
 $car1->getLorem();
+
+
+echo $car1->Test();
