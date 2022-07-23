@@ -14,4 +14,3 @@ $car1 = new Car('black', 4, 180, 'volvo');
 
 echo $car1->getCarInfo();
 $car1->getLorem();
-debug($car1);
