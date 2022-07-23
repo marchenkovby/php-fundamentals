@@ -13,5 +13,5 @@ $car1 = new Car('black', 4, 180, 'volvo');
 //$car2 = new Car('black', 4, 180, 'bmv');
 
 echo $car1->getCarInfo();
-debug($car1->getLorem());
-//echo $car2->getCarInfo();
+$car1->getLorem();
+debug($car1);
