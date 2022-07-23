@@ -23,7 +23,7 @@ class Car
         return self::$countCar;
     }
 
-    public function $Test()
+    public function Test()
     {
         echo 'Hello, World!';
     }
