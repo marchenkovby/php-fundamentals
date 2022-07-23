@@ -10,7 +10,9 @@ function debug(object $data): void
 }
 
 $car1 = new Car('black', 4, 180, 'volvo');
-//$car2 = new Car('black', 4, 180, 'bmv');
+$car2 = new Car('black', 4, 180, 'bmv');
+
+echo Car::$countCar;
 
 echo $car1->getCarInfo();
 $car1->getLorem();

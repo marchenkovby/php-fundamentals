@@ -7,27 +7,20 @@ class Car
     public $speed;
     public $brand;
 
+    public static $countCar = 0;
+
     public function __construct($color, $wheels = 4, $speed = 180, $brand)
     {
         $this->color = $color;
         $this->wheels = $wheels;
         $this->speed = $speed;
         $this->brand = $brand;
-        echo __METHOD__;
+        self::$countCar++;
     }
 
-    public function Car($color, $wheels = 4, $speed = 180, $brand)
+    public static function getCount()
     {
-        $this->color = $color;
-        $this->wheels = $wheels;
-        $this->speed = $speed;
-        $this->brand = $brand;
-    }
-
-    public function getLorem(){
-        ?>
-        <div class="">Hello, World</div>
-        <?php
+    
     }
 
     public function getCarInfo()
@@ -37,12 +30,6 @@ class Car
             Color: {$this->color}<br>
             Wheels: {$this->wheels}<br>
             Speed: {$this->speed}<br>";
-    }
-
-    public function __destruct()
-    {
-        //var_dump($this);
-        echo __METHOD__;
     }
 }
 
