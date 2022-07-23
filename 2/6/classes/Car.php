@@ -44,7 +44,7 @@ class Car
     {
         return "<h3>My test auto:</h3>
             Name: "  . self::TEST_CAR . "<br>
-            Speed: "  . self::TEST_CAR_SPEED . "<br>
+            Speed: "  . self::TEST_CAR_SPEED . "<br>";
     }
 }
 
